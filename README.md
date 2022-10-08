@@ -1,1 +1,1 @@
-# GraphQL Related Lessons and Projectsd
+# GraphQL Related Lessons and Projects
