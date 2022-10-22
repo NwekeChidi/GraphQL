@@ -7,7 +7,7 @@ const {
 
 
 
-exports.AuthorSchema =  new GraphQLObjectType({
+exports.AuthorSchema = new GraphQLObjectType({
     name: 'Author',
     description: 'This represents the author of a book',
     fields: () => ({

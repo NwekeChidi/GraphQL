@@ -3,8 +3,9 @@ const {
     GraphQLObjectType,
     GraphQLList
 } = require('graphql');
-const books = require('../data/books.json');
 const { BookSchema } = require('../schema/bookSchema');
+const { AuthorSchema } = require('../schema/authorSchema');
+const { getAllAuthors, getAllBooks } = require('../utils/dataResolver');
 
 const RootQuery = new GraphQLObjectType({
     name: 'Query',
@@ -13,7 +14,12 @@ const RootQuery = new GraphQLObjectType({
         allBooks: {
             type: GraphQLList(BookSchema),
             description: 'This is a list of all the books in DB',
-            resolve: () => books
+            resolve: () => getAllBooks
+        },
+        allAuthors: {
+            type: GraphQLList(AuthorSchema),
+            description: 'This is a list of all the authors in DB',
+            resolve: () => getAllAuthors
         }
     })
 })
