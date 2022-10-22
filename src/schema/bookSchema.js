@@ -1,5 +1,5 @@
 const { AuthorSchema } = require('./authorSchema');
-const { authorResolver } = require('../utils/dataResolver');
+const { authorResolver } = require('../utils/authorResolver');
 const {
     GraphQLObjectType,
     GraphQLString,

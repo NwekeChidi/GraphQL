@@ -1,11 +1,16 @@
 const {
     GraphQLSchema,
     GraphQLObjectType,
-    GraphQLList
+    GraphQLList,
+    G
 } = require('graphql');
 const { BookSchema } = require('../schema/bookSchema');
 const { AuthorSchema } = require('../schema/authorSchema');
-const { getAllAuthors, getAllBooks } = require('../utils/dataResolver');
+const { getAllAuthors } = require('../utils/authorResolver');
+const { 
+    getAllBooks,
+    getOneBook
+} = require('../utils/booksResolver');
 
 const RootQuery = new GraphQLObjectType({
     name: 'Query',
