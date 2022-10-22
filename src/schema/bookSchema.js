@@ -1,3 +1,5 @@
+const { AuthorSchema } = require('./authorSchema');
+const { authorResolver } = require('../utils/dataResolver');
 const {
     GraphQLObjectType,
     GraphQLString,
@@ -16,6 +18,12 @@ exports.BookSchema =  new GraphQLObjectType({
         title: { type: GraphQLNonNull(GraphQLString) },
         subtitle: { type: GraphQLString },
         authorId:  { type: GraphQLNonNull(GraphQLInt) },
+        author: {
+            type: AuthorSchema,
+            resolve: (book) => {
+                return authorResolver(book)
+            }
+        },
         published: { type: GraphQLString },
         publisher: { type: GraphQLString },
         pages: { type: GraphQLInt },
