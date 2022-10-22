@@ -94,5 +94,17 @@
         "pages":310,
         "description":"Get the most out of this foundational reference and improve the productivity of your software teams. This open access book collects the wisdom of the 2017 \"Dagstuhl\" seminar on productivity in software engineering, a meeting of community leaders, who came together with the goal of rethinking traditional definitions and measures of productivity.",
         "website":"https://doi.org/10.1007/978-1-4842-4221-6"
+    },
+    {
+        "id": 8,
+        "isbn":"9781484242316",
+        "title":"Rethinking Productivity in Software Engineering II",
+        "subtitle":"",
+        "authorId":8,
+        "published":"2020-04-11T00:00:00.000Z",
+        "publisher":"Apress",
+        "pages":310,
+        "description":"Get the most out of this intermediate reference and improve the productivity of your software teams. This open access book collects the wisdom of the 2017 \"Dagstuhl\" seminar on productivity in software engineering, a meeting of community leaders, who came together with the goal of rethinking traditional definitions and measures of productivity.",
+        "website":"https://doi.org/10.1007/978-1-4842-4221-7"
     }
 ]
