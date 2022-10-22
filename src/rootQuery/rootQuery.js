@@ -6,7 +6,10 @@ const {
 } = require('graphql');
 const { BookSchema } = require('../schema/bookSchema');
 const { AuthorSchema } = require('../schema/authorSchema');
-const { getAllAuthors } = require('../utils/authorResolver');
+const {
+    getAllAuthors,
+    getOneAuthor
+} = require('../utils/authorResolver');
 const { 
     getAllBooks,
     getOneBook
@@ -35,6 +38,16 @@ const RootQuery = new GraphQLObjectType({
                 }
             },
             resolve: (parent, args) => getOneBook(parent, args)
+        },
+        author: {
+            type: AuthorSchema,
+            description: 'This is a single author',
+            args: {
+                id: {
+                    type: GraphQLInt
+                }
+            },
+            resolve: (parent, args) => getOneAuthor(parent, args)
         }
     })
 })
