@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Marijn Haverbeke"
+    },
+    {
+        "id": 2,
+        "name": "Nicolás Bevacqua"
+    },
+    {
+        "id": 3,
+        "name": "Nicholas C. Zakas"
+    },
+    {
+        "id": 4,
+        "name": "Axel Rauschmayer"
+    },
+    {
+        "id": 5,
+        "name": "Addy Osmani"
+    },
+    {
+        "id": 6,
+        "name": "Kyle Simpson"
+    },
+    {
+        "id": 7,
+        "name": "Scott Chacon and Ben Straub"
+    },
+    {
+        "id": 8,
+        "name": "Caitlin Sadowski, Thomas Zimmermann"
+    }
+]
