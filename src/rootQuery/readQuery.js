@@ -14,9 +14,9 @@ const {
     getOneBook
 } = require('../utils/booksResolver');
 
-exports.RootQuery = new GraphQLObjectType({
-    name: 'Query',
-    description: 'This is the root query',
+exports.RootReadQuery = new GraphQLObjectType({
+    name: 'Read',
+    description: 'This is the root read query',
     fields: () => ({
         allBooks: {
             type: GraphQLList(BookSchema),

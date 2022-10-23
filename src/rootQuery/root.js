@@ -1,6 +1,6 @@
 const { GraphQLSchema } = require('graphql');
-const { RootQuery } = require('./readQuery')
+const { RootReadQuery } = require('./readQuery')
 
 exports.Schema = new GraphQLSchema({
-    query: RootQuery
+    query: RootReadQuery
 })
