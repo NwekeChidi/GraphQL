@@ -1,5 +1,4 @@
 const {
-    GraphQLSchema,
     GraphQLObjectType,
     GraphQLList,
     GraphQLInt
@@ -15,9 +14,9 @@ const {
     getOneBook
 } = require('../utils/booksResolver');
 
-const RootQuery = new GraphQLObjectType({
-    name: 'Query',
-    description: 'This is the root query',
+exports.RootReadQuery = new GraphQLObjectType({
+    name: 'Read',
+    description: 'This is the root read query',
     fields: () => ({
         allBooks: {
             type: GraphQLList(BookSchema),
@@ -50,8 +49,4 @@ const RootQuery = new GraphQLObjectType({
             resolve: (parent, args) => getOneAuthor(parent, args)
         }
     })
-})
-
-exports.Schema = new GraphQLSchema({
-    query: RootQuery
 })
